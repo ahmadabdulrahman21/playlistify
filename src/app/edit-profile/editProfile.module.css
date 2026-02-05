@@ -1,0 +1,77 @@
+.container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #121212;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.inputDisabled {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #b3b3b3;
+    font-size: 1rem;
+}
+
+.saveBtn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #1db954;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+}
+
+.saveBtn:hover {
+    background-color: #1ed760;
+}
+
+.cancelBtn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ef4444;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cancelBtn:hover {
+    background-color: #dc2626;
+}

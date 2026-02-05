@@ -1,0 +1,257 @@
+/* ================== GLOBAL ================== */
+.homePage {
+  background-color: #f6f6f6;
+  color: #2b3445;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #5865f2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: #e0e7ff;
+}
+
+/* ================== HERO SECTION ================== */
+.featureHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 3rem;
+  gap: 3rem;
+  animation: fadeIn 1.2s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  max-width: 600px;
+}
+
+.featuresHero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #5865f2 0%, #8b5cf6 100%);
+  color: white;
+  flex-wrap: wrap;
+  gap: 2rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.featuresHero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.featuresHero h1 span {
+  color: #ffffff;
+}
+
+.featuresHero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.featuresHeroImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ================== BUTTON ================== */
+.btnStart {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  background: #ffffff;
+  color: #5865f2;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(88, 101, 242, 0.4);
+}
+
+.btnStart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(88, 101, 242, 0.5);
+}
+
+/* ================== FEATURES SECTION ================== */
+.features {
+  margin-top: 6rem;
+  text-align: center;
+  padding: 0 2.5rem;
+}
+
+.features h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.featuresGrid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+.featureCard {
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease-in-out;
+}
+
+.featureCard:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(88, 101, 242, 0.18);
+  cursor: pointer;
+}
+
+.featureCard img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 1.2rem;
+}
+
+/* ================== ANIMATIONS ================== */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1200px) {
+  .featuresHero h1 {
+    font-size: 2.6rem;
+  }
+
+  .featuresHero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .featureHero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+
+  .heroText p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heroImage {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 2rem;
+  }
+
+  .featuresHero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .featureHero {
+    padding: 3rem 1rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .btnStart {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+}

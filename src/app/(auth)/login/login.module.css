@@ -1,0 +1,188 @@
+.loginPage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #5865f2 0%, #1ed760 100%);
+    color: #222;
+}
+
+/* ---------- Login Container ---------- */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* ---------- Login Card ---------- */
+.loginCard {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.loginCard h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #5865f2;
+}
+
+.loginCard p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* ---------- Form Styles ---------- */
+.inputGroup {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.inputGroup input:focus {
+    border-color: #5865f2;
+    outline: none;
+}
+
+/* ---------- Login Button ---------- */
+.btnLogin {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #5865f2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btnLogin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Signup Link ---------- */
+.signupLink {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.signupLink a {
+    color: #5865f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signupLink a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+    .loginCard {
+        padding: 2rem 1.5rem;
+    }
+
+    .loginCard h2 {
+        font-size: 1.8rem;
+    }
+
+    .inputGroup input {
+        padding: 0.7rem;
+    }
+
+    .btnLogin {
+        font-size: 1rem;
+    }
+}
+
+/* ----------------------- */
+/* ---------- Back Home Link ---------- */
+.loginCard .back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    background-color: #5865f2;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginCard .back:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- Adjust Login Card Positioning ---------- */
+.loginCard {
+    position: relative;
+    /* Needed for absolute positioning of Back Home link */
+}
+
+/* ---------- Continue as Guest Button ---------- */
+.btnGuest {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #fff;
+    /* White background */
+    color: #5865f2;
+    /* Spotify green text */
+    border: 2px solid #5865f2;
+    /* Green border */
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s, color 0.3s;
+    margin-top: 1rem;
+}
+
+.btnGuest:hover {
+    background-color: #000000;
+    /* Green background on hover */
+    color: #fff;
+    /* White text on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

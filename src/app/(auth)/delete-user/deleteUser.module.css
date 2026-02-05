@@ -1,0 +1,172 @@
+.deletePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f2f2f2;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: #e74c3c;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.error {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+/* ---------- PASSWORD INPUT ---------- */
+
+.passwordWrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 3rem 0.75rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #e74c3c;
+}
+
+/* ---------- EYE TOGGLE ---------- */
+
+.eyeToggle {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Eye base */
+.eyeOpen,
+.eyeClosed {
+    width: 22px;
+    height: 14px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Pupil */
+.eyeOpen::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #999;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Closed slash */
+.eyeClosed::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: #999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+/* Hover effect */
+.eyeToggle:hover .eyeOpen,
+.eyeToggle:hover .eyeClosed {
+    border-color: #e74c3c;
+}
+
+.eyeToggle:hover .eyeOpen::after,
+.eyeToggle:hover .eyeClosed::after {
+    background: #e74c3c;
+}
+
+/* Disabled states */
+.eyeToggle:disabled,
+.input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.cancelBtn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #ccc;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cancelBtn:hover {
+    background-color: #b3b3b3;
+}
+
+.deleteBtn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #c0392b;
+}
+
+.deleteBtn:disabled,
+.cancelBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
