@@ -1,4 +1,4 @@
-import dbConnect from "@/lib/dbConnect"; // your MongoDB connection
+import dbConnect from "../../../lib/mongodb";
 import User from "@/models/User";
 
 export async function DELETE(req, { params }) {
