@@ -249,15 +249,9 @@ html {
     grid-template-columns: 1fr;
   }
 
-  /* Fixed btnStart for mobile */
   .btnStart {
     width: 100%;
-    max-width: 350px;
-    /* optional: prevent too wide */
-    margin: 0 auto;
-    /* center horizontally */
-    padding: 0.9rem 1.5rem;
+    padding: 1rem 0;
     font-size: 1rem;
-    display: block;
   }
 }
