@@ -237,7 +237,6 @@ html {
 
   .navLinks {
     gap: 0.8rem;
-    width: fit-content;
   }
 
   .featureHero {
