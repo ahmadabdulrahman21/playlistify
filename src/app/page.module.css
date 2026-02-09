@@ -238,7 +238,7 @@ html {
   .navLinks {
     flex-direction: row;
     gap: 0.8rem;
-    width: 100%;
+    width: fit-content;
   }
 
   .featureHero {
