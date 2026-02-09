@@ -327,9 +327,38 @@
         display: none;
     }
 
-    .navLink {
-        display: none;
+    /* ================= MOBILE LOGIN/SIGNUP BUTTON ================= */
+    @media (max-width: 768px) {
+        .navLink {
+            display: inline-flex;
+            /* flexible box for centering content */
+            align-items: center;
+            justify-content: center;
+            padding: 0.55rem 1.2rem;
+            /* slightly smaller for mobile */
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(135deg, #5865f2, #1ed760);
+            /* match navbar gradient */
+            border-radius: 50px;
+            /* pill-shaped button */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+
+        .navLink:hover {
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+        }
+
+        .navLink:active {
+            transform: scale(0.97);
+        }
     }
+
 
     .dropdownMenu {
         width: 85vw;
