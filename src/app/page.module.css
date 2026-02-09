@@ -236,7 +236,7 @@ html {
   }
 
   .navLinks {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.8rem;
     width: 100%;
   }
