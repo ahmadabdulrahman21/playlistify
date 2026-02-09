@@ -328,7 +328,27 @@
     }
 
     .navLink {
-        display: flex;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Improve placement inside navbar */
+    .navbar {
+        padding: 0.8rem 1rem;
+    }
+
+    /* Make button look premium on mobile */
+    .navLink {
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(8px);
+        border-radius: 999px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+        transition: all 0.25s ease;
+    }
+
+    .navLink:active {
+        transform: scale(0.95);
     }
 
     .dropdownMenu {
