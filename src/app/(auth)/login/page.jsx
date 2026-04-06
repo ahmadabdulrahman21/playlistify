@@ -11,7 +11,7 @@ export default function LoginPage() {
     const [message, setMessage] = useState("");
     const [showPassword, setShowPassword] = useState(false); // new state
     const router = useRouter();
-    // sends request to the backend
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage("");
